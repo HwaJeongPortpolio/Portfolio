@@ -2,7 +2,7 @@
 
 * {margin: 0; padding: 0;}
 li {list-style: none;}
-a {text-decoration: none; color: #333; target="_blank"}
+a {text-decoration: none; color: #333;}
 html, body {
     color: #333;
     min-width: 1280px;
