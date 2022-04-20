@@ -21,9 +21,11 @@ header div {
 }
 header div h1 a {
     font-size: 25px;
+    font-family: 'IM_Hyemin-Bold';
 }
 header div a {
     font-size: 20px;
+    font-family: 'IM_Hyemin-Bold';
 }
 
 /* .main_visual */
@@ -59,11 +61,13 @@ header div a {
 .main_visual .title h2 {
     width: 100%;
     font-size: 60px;
+    font-family: 'IM_Hyemin-Bold';
 }
 .main_visual .title p {
     width: 100%;
     font-size: 30px;
     margin-bottom: 40px;
+    font-family: 'IM_Hyemin-Bold';
 }
 .main_visual .title a {
     color: #fff;
@@ -73,6 +77,8 @@ header div a {
     background-color: red;
     text-align: center;
     border-radius: 20px;
+    display: block;
+    font-family: 'HSYuji-Regular'
 }
 
 /* .best_v */
@@ -82,12 +88,16 @@ header div a {
 .best_v .title {
     text-align: center;
     margin-bottom: 40px;
+    background-color: #EFE6A7;
+    color: #575D54; 
 }
 .best_v .title h3 {
     font-size: 45px;
+    font-family: 'IM_Hyemin-Bold';
 }
 .best_v .title p {
     font-size: 20px;
+    font-family: 'IM_Hyemin-Bold';
 }
 .best_v .cont {
     width: 1280px;
@@ -118,10 +128,14 @@ header div a {
     font-size: 30px;
     margin-bottom: 5px;
 }
+.best_v .cont .info p {
+    font-family: 'IM_Hyemin-Bold';
+}
 .best_v .cont .info p:nth-of-type(2) {
     margin-top: 20px;
     margin-bottom: 40px; 
     /* 합쳐서 나타내면 margin: 20px 0 40px; */
+    font-family: 'HSYuji-Regular';
 }
 .best_v .cont .info dl {
     display: flex;
@@ -130,9 +144,16 @@ header div a {
 .best_v .cont .info dl dt {
     font-weight: bold;
     width: 100px;
+    font-family: 'SuncheonB';
+}
+.best_v .cont .info dl dd {
+    font-family: 'IM_Hyemin-Bold';
 }
 .best_v .cont .info ul {
     display: flex;
+}
+.best_v .cont .info ul li {
+    font-family: 'HSYuji-Regular'
 }
 .best_v .cont .info ul li a {
     height: 45px;
@@ -158,12 +179,16 @@ header div a {
 .motion .title {
     text-align: center;
     margin-bottom: 40px;
+    background-color: #CED496;
+    color: #575D54; 
 }
 .motion .title h3 {
     font-size: 45px;
+    font-family: 'IM_Hyemin-Bold';
 }
 .motion .title p {
     font-size: 20px;
+    font-family: 'IM_Hyemin-Bold';
 }
 .motion .list {
     display: flex;
@@ -174,15 +199,16 @@ header div a {
     cursor: pointer; /* 마우스 모양 : 손 모양 */
     height: 45px;
     line-height: 45px;
-    border: 1px solid #ccc;
+    border: 1px solid #BAAA8A;
     padding: 0 30px;
     margin: 0 5px;
     box-sizing: border-box;
+    font-family: 'HSYuji-Regular'
 }
 .motion .list li.on {
-    box-shadow: 2px 3px 15px rgba(255, 0, 0, 0.6);
+    box-shadow: 4px 6px 15px #909a6bec;
     /* 그림자 : X축 Y축 블러 색상 */
-    background-color: red;
+    background-color: #909A6B;
     color: #fff;
     border: 0;
 }
@@ -236,70 +262,84 @@ header div a {
 .motion .list_cont .items .info dl dt {
     width: 20%;
     font-weight: bold;
+    font-family: 'SuncheonB';
+}
+.motion .list_cont .items .info dl dd {
+    font-family: 'IM_Hyemin-Bold';
 }
 .motion .list_cont .items .info dl dd:hover a {
     text-decoration: underline;
 }
-
-/* .g_ver05 */
-.g_ver05 {
-    background-color: #eee;
-    padding: 100px 0;
-}
-.g_ver05 .title {
+/* .g_ver02 */
+.g_ver02 .title {
     text-align: center;
+    margin-bottom: 40px;
+    background-color: #CED496;
+    color: #575D54; 
+}
+.g_ver02 .title h3 {
+    font-size: 45px;
+    font-family: 'IM_Hyemin-Bold';
+}
+.g_ver02 .title p {
+    font-size: 20px;
+    font-family: 'IM_Hyemin-Bold';
+}
+.g_ver02 .em {
+    width: 1280px;
+    text-align: center;
+    margin: 0 auto;    
+}
+.g_ver02 em {
+    font-size: 13px;
+    text-align: right;   
+    margin-bottom: 20px;
+    display: block;
+}
+.g_ver02 .cont {
     width: 1280px;
     margin: 0 auto;
-}
-.g_ver05 .title h3 {
-    font-size: 45px;
-}
-.g_ver05 .title p {
-    font-size: 20px;
-}
-.g_ver05 .title em {
-    font-size: 13px;
-    text-align: right;
-    display: block;
-    margin-top: 40px;
-    margin-bottom: 10px;
-}
-.g_ver05 .cont {
-    width: 1280px;
-    margin: 0 auto;    
     display: flex;
     justify-content: space-between;
 }
-.g_ver05 .cont .items {
-    width: 49%;
+.g_ver02 .cont .items {
+    width: 23%;
     background-color: #fff;
-    display: flex;
-    align-items: center; /* 한 줄일 때 수직정렬 : 가운데 */
+    margin-bottom: 100px;
 }
-.g_ver05 .cont .items figure {
-    width: 60%;
-    height: 500px;
+.g_ver02 .cont .items figure {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
 }
-.g_ver05 .cont .items figure img {
+.g_ver02 .cont .items figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.8s;
+
 }
-.g_ver05 .cont .items .info {
-    width: 40%;
-    padding-left: 20px;
-    box-sizing: border-box;
+.g_ver02 .cont .items .info {
+    padding: 20px;
+    text-align: center;
 }
-.g_ver05 .cont .items .info p {
+.g_ver02 .cont .info p {
     font-size: 14px;
+    margin-bottom: 15px;
+    font-family: 'IM_Hyemin-Bold';
 }
-.g_ver05 .cont .items .info h4 {
-    font-size: 30px;
+.g_ver02 .cont .info h4 {
+    font-size: 20px;
+    font-family: 'SuncheonB';
+}
+.g_ver02 .cont .items:hover figure img {
+    transform: scale(1.5);
 }
 
 /* .about */
 .about {
     padding: 100px 0;
+    background-color: #eee;
 }
 .about .cont {
     width: 1280px;
@@ -333,6 +373,7 @@ header div a {
 }
 .about .cont .info div p {
     font-size: 20px;
+    font-family: 'IM_Hyemin-Bold';
 }
 .about .cont .info div dl dt {
     font-size: 20px;
@@ -341,11 +382,12 @@ header div a {
 }
 .about .cont .info div dl dd {
     font-size: 20px;
+    font-family: 'IM_Hyemin-Bold';
 }
 
 /* footer */
 footer {
-    background-color: black;
+    background-color: #575D54;
     text-align: center;
     color: #fff;
     padding: 100px 0;
@@ -357,15 +399,16 @@ footer ul li {
     border: 1px solid #fff;
     border-radius: 50px;
     line-height: 50px;
+    font-family: 'HSYuji-Regular';
 }
 footer ul li a {
     color: #fff;
 }
 footer ul li:nth-of-type(1) {
-    background-color: #fff;
+    background-color: #BAAA8A;
 }
 footer ul li:nth-of-type(1) a {
-    color: black;
+    color: #F7EBC0;
 }
 footer p {
     margin-top: 20px;

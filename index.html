@@ -5,15 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>구화정 포토폴리오</title>
-    <link href="css/main.css" rel="stylesheet" />
+    
     <!-- 팬시박스 css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- aos.css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet" />
 
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- 팬시박스 js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
         $(function(){
             //탭메뉴
@@ -23,17 +35,38 @@
 
                 $('.motion .list_cont').removeClass('on'); //클릭하지 않은 class는 지운다
                 $('.motion .list_cont').eq($(this).index()).addClass('on'); //클릭한 li에 순서를 찾아서 불러온다
+                $
             }); //click end
+            AOS.init();
         });
     </script>
+    <style>
+        @font-face {
+            font-family: 'HSYuji-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSYuji-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'IM_Hyemin-Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'SuncheonB';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/SuncheonB.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }    
+    </style>
 </head>
 <body>
     <header>
         <div>
             <h1>
-                <a href="#">GUHWAJEONG</a>
+                <a href="https://hwajeongportpolio.github.io/portfolio/">GUHWAJEONG</a>
             </h1>
-            <a href="#" download>resume</a>
         </div>                
     </header>
     <section class="main_visual">
@@ -43,16 +76,18 @@
             <!-- 영상을 넣을 경우 오른쪽에 낳두는 것을 추천 -->
         </figure>
         <div class="title">
-            <h2>MOTION GRAPHIC DESINGER</h2>
-            <p>Gu Hwa Jeong</p>
-            <a href="https://www.youtube.com/channel/UCmUI-FOtrUVORQg40Dy2gfQ" target="_blank">유튜브 채널</a>
+            <div class=" animate__animated animate__bounceInLeft">
+                <h2>MOTION GRAPHIC DESINGER</h2>
+                <p>Gu Hwa Jeong</p>
+                <a href="https://www.youtube.com/channel/UCmUI-FOtrUVORQg40Dy2gfQ" target="_blank">유튜브 채널</a>
+            </div>
         </div><!-- .title end -->
     </section><!-- .main_visual end -->
 
     <section class="best_v">
         <div class="title">
-            <h3>BEST VIDEO EDITING</h3>
-            <p>내가 뽑은 베스트 작품</p>
+            <h3 data-aos="zoom-in">BEST VIDEO EDITING</h3>
+            <p data-aos="zoom-in" >내가 뽑은 베스트 작품</p>
         </div> <!-- .title end -->
         <div class="cont">
             <div class="youtube">
@@ -61,29 +96,26 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/keIBaNDCc7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div><!-- .youtube_in end -->
             </div> <!-- .youtube end -->
-            <div class="info">
-                <strong>3D GRAPHIC</strong>
-                <h4>3D 그래픽_영상고지 영상</h4>
-                <p>편집, 연출, 디자인</p>
-                <p>제작목적, 컨셉트 2줄정도</p>
-                <dl>
+            <div class="info" data-aos="fade-left";>
+                <strong data-aos="fade-left">3D GRAPHIC</strong>
+                <h4 data-aos="fade-left">3D 그래픽_영상고지 영상</h4>
+                <p data-aos="fade-left">편집, 연출, 디자인</p>
+                <p data-aos="fade-left">마야를 이용해서     영상고지 영상을 만들고, 물체가 하나씩 등장하면서 모두 다 나왔을 때 화면이 회전과 확대가 되면서 글이 나오게 표현하였다.</p>
+                <dl data-aos="fade-left">
                     <dt>프로그램</dt>
-                    <dd>마야, 에프터이펙트</dd>
+                    <dd>Maya, After Effects</dd>
                 </dl>
-                <dl>
+                <dl data-aos="fade-left">
                     <dt>배경음악</dt>
                     <dd>저작권 없는 무료 음악</dd>
                 </dl>
-                <dl>
-                    <dt>러닝 타임</dt>
+                <dl data-aos="fade-left">
+                    <dt>러닝타임</dt>
                     <dd>00:00:10</dd>
                 </dl>
-                <ul>
-                    <li>
+                <ul data-aos="fade-left">
+                    <li data-aos="fade-left">
                         <a href="https://www.youtube.com/watch?v=keIBaNDCc7A" target="_blank">유튜브 이동하기</a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">기획서 보기</a>
                     </li>
                 </ul>
             </div> <!-- .info end -->
@@ -92,8 +124,8 @@
 
     <section class="motion">
         <div class="title">
-            <h3>MOTION GRAPHICS</h3>
-            <p>비디오, 애니메이션 기술을 이용한 영상제작</p>
+            <h3 data-aos="zoom-in">VIDEO GRAPHICS</h3>
+            <p data-aos="zoom-in">비디오, 애니메이션 기술을 이용한 영상제작</p>
         </div><!-- .title end -->
         <ul class="list">
             <li class="on">모션 그래픽</li>
@@ -112,22 +144,22 @@
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/Av7PzQou0dI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div><!-- .youtube_in end -->
                     </div><!-- .youtube end -->
-                    <div class="info">
+                    <div class="info" data-aos="fade-down">
                         <p>디자인, 연출, 편집, 보정, 특수효과</p>
                         <h4>사과파이 요리레시피</h4>
-                        <dl>
+                        <dl data-aos="fade-down">
                             <dt>프로그램</dt>
-                            <dd>일러스트, 애프터이펙트</dd>
+                            <dd>Illustrator, After Effects</dd>
                         </dl>
-                        <dl>
+                        <dl data-aos="fade-down">
                             <dt>러닝타임</dt>
                             <dd>00:00:44</dd>
                         </dl>
-                        <dl>
+                        <dl data-aos="fade-down">
                             <dt>배경음악</dt>
                             <dd>저작권 없는 무료 음악</dd>
                         </dl>
-                        <dl>
+                        <dl data-aos="fade-down">
                             <dt>URL 주소</dt>
                             <dd><a href="https://www.youtube.com/watch?v=Av7PzQou0dI" target="_blank">https://www.youtube.com/watch?v=Av7PzQou0dI</a></dd>
                         </dl>
@@ -140,22 +172,22 @@
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/J2ZgUfi7Ou0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div><!-- .youtube_in end -->
                     </div><!-- .youtube end -->
-                    <div class="info">
-                        <p>연출, 편집, 보정, 특수효과</p>
-                        <h4>사용가능한 프로그램들 소개</h4>
-                        <dl>
+                    <div class="info" data-aos="fade-down">
+                        <p data-aos="fade-down">연출, 편집, 보정, 특수효과</p>
+                        <h4 data-aos="fade-down">사용가능한 프로그램들 소개</h4>
+                        <dl data-aos="fade-down">
                             <dt>프로그램</dt>
                             <dd>Premiere Pro, After Effects</dd>
                         </dl>
-                        <dl>
+                        <dl data-aos="fade-down">
                             <dt>러닝타임</dt>
                             <dd>00:00:30</dd>
                         </dl>
-                        <dl>
+                        <dl data-aos="fade-down">
                             <dt>배경음악</dt>
-                            <dd>저작권 없는 무료 사용가능 음악</dd>
+                            <dd>저작권 없는 무료 음악</dd>
                         </dl>
-                        <dl>
+                        <dl data-aos="fade-down">
                             <dt>URL 주소</dt>
                             <dd><a href="https://www.youtube.com/watch?v=J2ZgUfi7Ou0" target="_blank">https://www.youtube.com/watch?v=J2ZgUfi7Ou0</a></dd>
                         </dl>
@@ -176,7 +208,7 @@
                         <h4>3D 그래픽_영상고지 영상</h4>
                         <dl>
                             <dt>프로그램</dt>
-                            <dd>마야, After Effects</dd>
+                            <dd>Maya, After Effects</dd>
                         </dl>
                         <dl>
                             <dt>러닝타임</dt>
@@ -194,47 +226,201 @@
                 </div><!-- .items end 1 -->
             </div><!-- .list_cont end 3D 그래픽 -->
 
+            <div class="list_cont"> <!-- 인포그래픽 -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브 연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Av7PzQou0dI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>디자인, 연출, 편집, 보정, 특수효과</p>
+                        <h4>사과파이 요리레시피</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Illustrator, After Effects</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>00:00:44</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>저작권 없는 무료 음악</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com/watch?v=Av7PzQou0dI" target="_blank">https://www.youtube.com/watch?v=Av7PzQou0dI</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+                </div><!-- .items end 1 -->
+            </div><!-- .list_cont end 인포그래픽 -->
+
+            <div class="list_cont"> <!-- 브이로그 -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브 연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Lk7iuwLea48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>촬영, 연출, 편집, 보정, 특수효과</p>
+                        <h4>부산 여행 브이로그</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Premiere Pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>00:00:52</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>저작권 없는 무료 음악</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com/watch?v=Lk7iuwLea48" target="_blank">https://www.youtube.com/watch?v=Lk7iuwLea48</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+                </div><!-- .items end 1 -->
+            </div><!-- .list_cont end 브이로그 -->
+
+            <div class="list_cont"> <!-- 타이틀시퀀스 -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브 연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Fv6-FncQvUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>연출, 편집, 보정, 특수효과</p>
+                        <h4>실종 느와르M 타이틀 시퀀스</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>After Effects, Photoshop </dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>00:00:44</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>저작권 없는 무료 음악</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com/watch?v=Fv6-FncQvUo" target="_blank">https://www.youtube.com/watch?v=Fv6-FncQvUo</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+                </div><!-- .items end 1 -->
+            </div><!-- .list_cont end 타이틀시퀀스 -->
+
+            <div class="list_cont"> <!-- 사운드디자인 -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브 연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PMOtp6uC09A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>촬영, 연출, 편집, 보정, 특수효과</p>
+                        <h4>언박싱 영상 (책소개) _ 사운드 디자인</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>프리미어</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>00:01:55</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>저작권 없는 무료 음악</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL 주소</dt>
+                            <dd><a href="https://www.youtube.com/watch?v=PMOtp6uC09A" target="_blank">https://www.youtube.com/watch?v=PMOtp6uC09A</a></dd>
+                        </dl>
+                    </div><!-- .info end -->
+                </div><!-- .items end 1 -->
+            </div><!-- .list_cont end 사운드디자인 -->
         </div><!-- .motion_cont end -->
     </section><!-- .motion end -->
 
-    <section class="g_ver05">
+    <section class="g_ver02">
         <div class="title">
-            <h3>GRAPHIC DESIGN</h3>
-            <p>디자인 프로그램을 사용하여 만든 그래픽 디자인</p>
-            <em>클릭하시면 원본이미지를 보실 수 있습니다.</em>
+            <h3 data-aos="zoom-in">GRAPHIC DESIGN</h3>
+            <p data-aos="zoom-in">디자인 프로그램을 사용하여 만든 그래픽 디자인</p>
         </div> <!-- .title end -->
+        <div class="em">
+            <em data-aos="fade-left">그림을 클릭하시면 원본 이미지를 보실 수 있습니다.</em>
+        </div>
         <div class="cont">
-            <a class="items" href="http://via.placeholder.com/300X500" data-fancybox="images">
-                <figure>
-                    <img src="http://via.placeholder.com/300X500/333/?text=image" alt="" />
-                </figure>
-                <div class="info">
-                    <p>#보정</p>
-                    <h4>제작된 이미지 제목</h4>
-                </div><!-- .info end -->
-            </a> <!-- .items end 1 -->
-            
-            <a class="items" href="http://via.placeholder.com/300X500" data-fancybox="images">
-                <figure>
-                    <img src="http://via.placeholder.com/300X500/333/?text=image" alt="" />
-                </figure>
-                <div class="info">
-                    <p>#보정</p>
-                    <h4>제작된 이미지 제목</h4>
-                </div><!-- .info end -->
-            </a> <!-- .items end 2 -->
-        </div> <!-- .cont end -->
-    </section> <!-- .g_ver05 end -->
+            <div class="items">
+                <a href="images/file.jpg" data-fancybox="images">
+                    <figure>
+                        <img src="images/file.jpg" alt="타이틀시퀀스예시" />
+                    </figure>
+                    <div class="info">
+                        <p data-aos="fade-down">디자인-Photoshop</p>
+                        <h4 data-aos="zoom-in">타이틀 시퀀스</h4>
+                    </div><!-- .info end -->
+                </a>
+            </div><!-- .items end 1 -->
+
+            <div class="items">
+                <a href="images/cook.jpg" data-fancybox="images">
+                    <figure>
+                        <img src="images/cook.jpg" alt="요리레시피예시" />
+                    </figure>
+                    <div class="info">
+                        <p data-aos="fade-down">디자인-Illustrator</p>
+                        <h4 data-aos="zoom-in">요리레시피</h4>
+                    </div><!-- .info end -->
+                </a>
+            </div><!-- .items end 2 -->
+
+            <div class="items">
+                <a href="images/profile.jpg" data-fancybox="images">
+                    <figure>
+                        <img src="images/profile.jpg" alt="profile" />
+                    </figure>
+                    <div class="info" >
+                        <p data-aos="fade-down">디자인-Illustrator</p>
+                        <h4 data-aos="zoom-in">유튜브에서 사용된 프로필</h4>
+                    </div><!-- .info end -->
+                </a>
+            </div><!-- .items end 3 -->
+
+            <div class="items">
+                <a href="images/youtube_image.jpg" data-fancybox="images">
+                    <figure>
+                        <img src="images/youtube_image.jpg" alt="유튜브배너" />
+                    </figure>
+                    <div class="info">
+                        <p data-aos="fade-down">디자인-Illustrator</p>
+                        <h4 data-aos="zoom-in">유튜브에서 사용된 배너</h4>
+                    </div><!-- .info end -->
+                </a>
+            </div><!-- .items end 4 -->
+
+        </div><!-- .cont end -->
+    </section><!-- .g_ver02 end -->
 
     <section class="about">
         <div class="cont">
             <div class="info">
                 <div>
                     <h4>PROFILE</h4>
-                    <p>이름 / name</p>
-                    <p>1900.00.00</p>
-                    <p><a href="tel:#">010.0000.0000</a></p>
-                    <p>부산광역시 00구</p>
+                    <p>구화정 / Gu Hwa Jeong</p>
+                    <p>1997.08.15</p>
+                    <p><a href="tel:#">010.9509.3183</a></p>
+                    <p>부산광역시 해운대구</p>
                 </div>
                 <div>
                     <h4>EDUCATION</h4>
@@ -250,11 +436,11 @@
                         <dd>수질환경산업기사</dd>
                     </dl>
                     <dl>
-                        <dt>2000.00</dt>
+                        <dt>2019.08</dt>
                         <dd>ITQ 엑셀</dd>
                     </dl>
                     <dl>
-                        <dt>2000.00</dt>
+                        <dt>2010.03</dt>
                         <dd>ITQ 파워포인트</dd>
                     </dl>
                 </div>
@@ -274,8 +460,8 @@
         <h3>구화정 GU HWA JEONG</h3>
         <ul>
             <li><a href="https://www.youtube.com/channel/UCmUI-FOtrUVORQg40Dy2gfQ" target="_blank">유튜브 채널</a></li>
-            <li><a href="tel:#">연락처</a></li>
-            <li>카카오톡 아이디또는 이메일 주소</li>
+            <li><a href="tel:01095093183">연락처</a></li>
+            <li>vksnfvksnf54@naver.com</li>
         </ul>
         <p>copyright 2022. 구화정 all rights reserved.<br />본 사이트는 개인 포토폴리오 사이트로 제작되어 상업적 목적이 아닙니다. 사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝혀 드립니다.</p>
     </footer>
