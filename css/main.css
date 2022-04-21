@@ -481,7 +481,14 @@ footer p {
     .main_visual .title h2 {
         font-size: 40px;
     }
-    
+
+    .motion .list_cont .items .info dl dt {
+        width: 30%;
+    }
+    .motion .list_cont .items .info dl dd {
+        width: 70px;
+        word-break: break-all; /* 줄바꿈 : 글자별 */
+    }
     .g_ver02 .cont .items figure {
         height: 300px;
     }
