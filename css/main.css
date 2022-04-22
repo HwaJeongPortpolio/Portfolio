@@ -27,6 +27,11 @@ header div a {
     font-size: 20px;
     font-family: 'IM_Hyemin-Bold';
 }
+header div a i {
+    align-items: center;
+    font-size: 25px;
+    margin: 0 auto;
+}
 
 /* .main_visual */
 .main_visual {
@@ -107,7 +112,7 @@ header div a {
     align-items: center;
 }
 .best_v .cont .youtube {
-    width: 50%;
+    width: 60%;
 }
 .best_v .cont .youtube .youtube_in {
     width: 100%;
@@ -123,6 +128,7 @@ header div a {
 }
 .best_v .cont .info {
     width: 45%;
+    margin-left: 20px;
 }
 .best_v .cont .info h4 {
     font-size: 30px;
@@ -136,6 +142,10 @@ header div a {
     margin-bottom: 40px; 
     /* 합쳐서 나타내면 margin: 20px 0 40px; */
     font-family: 'HSYuji-Regular';
+}
+.best_v .cont .info p i {
+    margin: 0 auto;
+    vertical-align: middle;
 }
 .best_v .cont .info dl {
     display: flex;
@@ -250,6 +260,10 @@ header div a {
 /* .motion (.motion_cont 생략) .list_cont .items .info */
 .motion .list_cont .items .info {
     padding: 30px;
+}
+.motion .list_cont .items .info p i {
+    margin: 0 auto;
+    text-align: center;
 }
 .motion .list_cont .items .info h4 {
     font-size: 30px;
@@ -409,6 +423,11 @@ footer ul li:nth-of-type(1) {
 }
 footer ul li:nth-of-type(1) a {
     color: #F7EBC0;
+}
+footer ul li i {
+    vertical-align: middle;
+    font-size: 20px;
+    margin: 0 auto;
 }
 footer p {
     margin-top: 20px;
