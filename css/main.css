@@ -6,7 +6,9 @@ a {text-decoration: none; color: #333;}
 html, body {
     color: #333;
     /* min-width: 1280px; */
+    overflow-x: hidden;
 }
+
 
 /* header */
 header {
@@ -136,9 +138,9 @@ header div a i {
 }
 .best_v .cont .info p:nth-of-type(2) {
     margin-top: 20px;
-    margin-bottom: 40px; 
+    margin-bottom: 20px; 
     /* 합쳐서 나타내면 margin: 20px 0 40px; */
-    font-family: 'HSYuji-Regular';
+    font-family: 'BMJUA';
 }
 .best_v .cont .info p i {
     margin: 0 auto;
@@ -154,7 +156,7 @@ header div a i {
     font-family: 'SuncheonB';
 }
 .best_v .cont .info dl dd {
-    font-family: 'Cafe24Ssurround';
+    font-family: 'paybooc-Bold';
 }
 .best_v .cont .info ul {
     display: flex;
@@ -281,7 +283,7 @@ header div a i {
     font-family: 'SuncheonB';
 }
 .motion .list_cont .items .info dl dd {
-    font-family: 'Cafe24Ssurround';
+    font-family: 'paybooc-Bold';
 }
 .motion .list_cont .items .info dl dd:hover a {
     text-decoration: underline;
@@ -342,7 +344,7 @@ header div a i {
 .g_ver02 .cont .info p {
     font-size: 14px;
     margin-bottom: 15px;
-    font-family: 'Cafe24Ssurround';
+    font-family: 'paybooc-Bold';
 }
 .g_ver02 .cont .info h4 {
     font-size: 20px;
@@ -364,20 +366,14 @@ header div a i {
     align-items: center;
     justify-content: space-between;
 }
-.about .cont figure {
-    width: 30%;
-    height: 500px;
-}
-.about .cont figure img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 .about .cont .info {
     width: 60%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.about .cont .info h4 {
+    font-family: 'SuncheonB';
 }
 .about .cont .info div {
     width: 45%;
@@ -392,13 +388,15 @@ header div a i {
     font-family: 'paybooc-Bold';
 }
 .about .cont .info div dl dt {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     margin-bottom: 5px;
+    font-family: '-KITA-Regular';
 }
 .about .cont .info div dl dd {
     font-size: 20px;
     font-family: 'paybooc-Bold';
+    margin-bottom: 10px;
 }
 
 /* footer */
